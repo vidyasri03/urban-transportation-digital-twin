@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>
+        Urban Digital Twin
+    </title>
+
+    <link rel="stylesheet"
+          href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+
+    <link rel="stylesheet"
+          href="/static/style.css">
+
+</head>
+
+<body>
+
+    <!-- ===================================== -->
+    <!-- HEADER -->
+    <!-- ===================================== -->
+    <div class="header">
+
+        <h1>
+            🚀 Urban Transportation Digital Twin
+        </h1>
+
+        <p>
+            Cascading Failures • Network Resilience • Traffic Recovery
+        </p>
+
+    </div>
+
+
+    <!-- ===================================== -->
+    <!-- CONTROLS -->
+    <!-- ===================================== -->
+    <div class="controls">
+
+        <!-- FAILURE CONTROLS -->
+        <button onclick="runSimulation('none')">
+
+            Initial State
+
+        </button>
+
+        <button onclick="runSimulation('random')">
+
+            Random Failure
+
+        </button>
+
+        <button onclick="runSimulation('critical')">
+
+            Targeted Attack
+
+        </button>
+
+        <button onclick="resetSimulation()">
+
+            Reset
+
+        </button>
+
+        <!-- OPEN RECOVERY PAGE -->
+        <button onclick="window.location.href='/recovery'">
+
+            Recovery Analysis
+
+        </button>
+
+    </div>
+
+
+    <!-- ===================================== -->
+    <!-- MAIN CONTAINER -->
+    <!-- ===================================== -->
+    <div class="container">
+
+        <!-- ================================= -->
+        <!-- MAP -->
+        <!-- ================================= -->
+        <div id="map"></div>
+
+
+        <!-- ================================= -->
+        <!-- SIDEBAR -->
+        <!-- ================================= -->
+        <div class="side">
+
+            <!-- ================================= -->
+            <!-- METRICS -->
+            <!-- ================================= -->
+            <div class="card">
+
+                <h2>
+                    📊 Network Metrics
+                </h2>
+
+                <div class="metric-grid">
+
+                    <div class="metric-box">
+
+                        <span class="metric-title">
+                            Active Nodes
+                        </span>
+
+                        <span id="active"
+                              class="metric-value">
+                        </span>
+
+                    </div>
+
+                    <div class="metric-box">
+
+                        <span class="metric-title">
+                            Failed Nodes
+                        </span>
+
+                        <span id="failed"
+                              class="metric-value">
+                        </span>
+
+                    </div>
+
+                    <div class="metric-box">
+
+                        <span class="metric-title">
+                            Efficiency
+                        </span>
+
+                        <span id="eff"
+                              class="metric-value">
+                        </span>
+
+                    </div>
+
+                    <div class="metric-box">
+
+                        <span class="metric-title">
+                            Connectivity Loss
+                        </span>
+
+                        <span id="loss"
+                              class="metric-value">
+                        </span>
+
+                    </div>
+
+                    <div class="metric-box full">
+
+                        <span class="metric-title">
+                            Resilience Score
+                        </span>
+
+                        <span id="resilience"
+                              class="metric-value big">
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- ================================= -->
+            <!-- CRITICAL NODES -->
+            <!-- ================================= -->
+            <div class="card">
+
+                <h2>
+                    ⚠️ Critical Infrastructure
+                </h2>
+
+                <div id="critical"></div>
+
+            </div>
+
+
+            <!-- ================================= -->
+            <!-- INFO -->
+            <!-- ================================= -->
+            <div class="card">
+
+                <h2>
+                    ℹ️ Recovery Analysis
+                </h2>
+
+                <div class="item">
+
+                    Open the Recovery Analysis
+                    dashboard to compare:
+
+                    <br><br>
+
+                    • Random Recovery<br>
+                    • Load-Based Recovery<br>
+                    • Centrality Recovery<br>
+
+                    <br>
+
+                    with animated restoration
+                    and resilience evolution.
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- ===================================== -->
+    <!-- JAVASCRIPT -->
+    <!-- ===================================== -->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+    <script src="/static/main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>
+        Recovery Dashboard
+    </title>
+    
+    <link
+        rel="stylesheet"
+        href="https://unpkg.com/leaflet/dist/leaflet.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="/static/style.css"
+    >
+
+</head>
+
+<body>
+
+    <!-- ===================================== -->
+    <!-- HEADER -->
+    <!-- ===================================== -->
+
+    <div class="header">
+
+        <h1>
+            Recovery Strategy Dashboard
+        </h1>
+
+        <p>
+            Transportation Network Recovery
+            and Strategy Evaluation
+        </p>
+
+    </div>
+
+
+    <!-- ===================================== -->
+    <!-- CONTROLS -->
+    <!-- ===================================== -->
+
+    <div class="controls">
+
+        <button onclick="
+            startRecovery(
+                'Random Recovery'
+            )
+        ">
+            Random Recovery
+        </button>
+
+        <button onclick="
+            startRecovery(
+                'Load-Based Recovery'
+            )
+        ">
+            Load-Based Recovery
+        </button>
+
+        <button onclick="
+            startRecovery(
+                'Centrality Recovery'
+            )
+        ">
+            Centrality Recovery
+        </button>
+
+        <button onclick="
+            compareStrategies()
+        ">
+            Compare Strategies
+        </button>
+
+    </div>
+
+
+    <!-- ===================================== -->
+    <!-- MAIN LAYOUT -->
+    <!-- ===================================== -->
+
+    <div class="container">
+
+        <!-- MAP -->
+        <div id="recoveryMap"></div>
+
+
+        <!-- SIDEBAR -->
+        <div class="side">
+
+            <!-- STRATEGY -->
+            <div class="card">
+
+                <h2>
+                    Current Strategy
+                </h2>
+
+                <div id="strategyPanel">
+
+                    <div class="item">
+
+                        Run a recovery strategy.
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- METRICS -->
+            <div class="card">
+
+                <h2>
+                    Recovery Metrics
+                </h2>
+
+                <div id="recoveryMetrics">
+
+                    <div class="item">
+
+                        No recovery started.
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- COMPARISON -->
+            <div class="card">
+
+                <h2>
+                    Strategy Comparison
+                </h2>
+
+                <div id="comparisonPanel">
+
+                    <div class="item">
+
+                        Compare strategies after
+                        running recoveries.
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- TIMELINE -->
+            <div class="card">
+
+                <h2>
+                    Recovery Timeline
+                </h2>
+
+                <div id="timelinePanel">
+
+                    <div class="item">
+
+                        Recovery history appears here.
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- ===================================== -->
+    <!-- SCRIPTS -->
+    <!-- ===================================== -->
+
+    <script src="
+        https://unpkg.com/leaflet/dist/leaflet.js
+    "></script>
+
+    <script src="/static/recovery.js"></script>
+
+</body>
+
+</html>

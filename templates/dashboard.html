@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h2>Simulation Dashboard</h2>
+
+<button onclick="runSimulation()">Run Simulation</button>
+<div id="map" style="height: 500px;"></div>
+<h3>Results</h3>
+
+<p>Failed Nodes: <span id="failed">-</span></p>
+<p>Efficiency: <span id="eff">-</span></p>
+<p>Connectivity Loss: <span id="loss">-</span></p>
+
+<h3>Best Strategy</h3>
+<p id="best"></p>
+
+<h3>Strategy Comparison</h3>
+<div id="strategies"></div>
+
+<h3>Critical Nodes</h3>
+<div id="critical"></div>
+
+{% endblock %}

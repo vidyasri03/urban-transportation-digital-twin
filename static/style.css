@@ -1,0 +1,350 @@
+body {
+
+    margin: 0;
+
+    font-family: Arial, sans-serif;
+
+    background: #161625;
+
+    color: white;
+
+    overflow: hidden;
+}
+
+
+/* ===================================== */
+/* HEADER */
+/* ===================================== */
+
+.header {
+
+    text-align: center;
+
+    padding: 16px;
+
+    background: #1f1f35;
+
+    border-bottom: 1px solid #333;
+}
+
+.header h1 {
+
+    margin: 0;
+
+    font-size: 30px;
+}
+
+.header p {
+
+    color: #aaa;
+
+    margin-top: 6px;
+}
+
+
+/* ===================================== */
+/* CONTROLS */
+/* ===================================== */
+
+.controls {
+
+    text-align: center;
+
+    padding: 12px;
+
+    background: #1b1b2f;
+
+    border-bottom: 1px solid #2d2d4f;
+}
+
+button {
+
+    background: #3b82f6;
+
+    color: white;
+
+    border: none;
+
+    padding: 10px 16px;
+
+    margin: 5px;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    font-size: 14px;
+
+    transition: 0.2s;
+}
+
+button:hover {
+
+    background: #2563eb;
+
+    transform: translateY(-1px);
+}
+
+
+/* ===================================== */
+/* MAIN LAYOUT */
+/* ===================================== */
+
+.container {
+
+    display: flex;
+
+    height: calc(100vh - 145px);
+}
+
+
+/* ===================================== */
+/* MAIN MAP */
+/* ===================================== */
+
+#map {
+
+    width: 70%;
+
+    height: 100%;
+}
+
+
+/* ===================================== */
+/* RECOVERY MAP */
+/* ===================================== */
+
+#recoveryMap {
+
+    width: 70%;
+
+    height: 100%;
+}
+
+
+/* ===================================== */
+/* SIDEBAR */
+/* ===================================== */
+
+.side {
+
+    width: 30%;
+
+    overflow-y: auto;
+
+    background: #1b1b2f;
+
+    padding: 12px;
+
+    box-sizing: border-box;
+}
+
+
+/* ===================================== */
+/* CARDS */
+/* ===================================== */
+
+.card {
+
+    background: #23233a;
+
+    padding: 14px;
+
+    border-radius: 14px;
+
+    margin-bottom: 14px;
+
+    box-shadow:
+        0 0 8px rgba(0,0,0,0.3);
+}
+
+.card h2 {
+
+    margin-top: 0;
+
+    color: #8db8ff;
+}
+
+
+/* ===================================== */
+/* ITEMS */
+/* ===================================== */
+
+.item {
+
+    background: #2c2c48;
+
+    padding: 10px;
+
+    border-radius: 8px;
+
+    margin-bottom: 8px;
+}
+
+
+/* ===================================== */
+/* METRICS */
+/* ===================================== */
+
+.metric-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap: 10px;
+}
+
+.metric-box {
+
+    background: #2d2d4f;
+
+    padding: 10px;
+
+    border-radius: 10px;
+
+    text-align: center;
+}
+
+.metric-box.full {
+
+    grid-column: span 2;
+}
+
+.metric-title {
+
+    display: block;
+
+    color: #aaa;
+
+    font-size: 13px;
+}
+
+.metric-value {
+
+    display: block;
+
+    margin-top: 6px;
+
+    font-size: 18px;
+
+    font-weight: bold;
+}
+
+.metric-value.big {
+
+    font-size: 28px;
+
+    color: #00ff88;
+}
+
+
+/* ===================================== */
+/* STRATEGY CARDS */
+/* ===================================== */
+
+.strategy-card {
+
+    background: linear-gradient(
+        135deg,
+        #2b2150,
+        #3a2d66
+    );
+
+    padding: 14px;
+
+    border-radius: 14px;
+
+    margin-bottom: 12px;
+
+    border: 1px solid #4d3f85;
+
+    box-shadow:
+        0 0 8px rgba(0,0,0,0.3);
+}
+
+
+/* ===================================== */
+/* STRATEGY TITLE */
+/* ===================================== */
+
+.strategy-title {
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    margin-bottom: 12px;
+
+    color: #8db8ff;
+}
+
+
+/* ===================================== */
+/* METRIC ROW */
+/* ===================================== */
+
+.metric-row {
+
+    margin-bottom: 12px;
+}
+
+.metric-label {
+
+    font-size: 13px;
+
+    color: #bbb;
+}
+
+.metric-text {
+
+    margin-top: 4px;
+
+    font-size: 15px;
+}
+
+
+/* ===================================== */
+/* TIMELINE */
+/* ===================================== */
+
+.timeline-step {
+
+    background: #2b2147;
+
+    border-left: 4px solid #00a3ff;
+
+    padding: 12px;
+
+    margin-bottom: 10px;
+
+    border-radius: 10px;
+}
+
+
+/* ===================================== */
+/* LEAFLET FIXES */
+/* ===================================== */
+
+.leaflet-container {
+
+    background: #111;
+}
+
+
+/* ===================================== */
+/* SCROLLBAR */
+/* ===================================== */
+
+.side::-webkit-scrollbar {
+
+    width: 8px;
+}
+
+.side::-webkit-scrollbar-thumb {
+
+    background: #444;
+
+    border-radius: 10px;
+}
