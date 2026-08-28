@@ -1,4 +1,4 @@
-# Urban Transportation Digital Twin
+﻿# Urban Transportation Digital Twin
 
 ## Overview
 Urban Transportation Digital Twin is a simulation and analysis platform designed to model urban transportation networks, evaluate traffic flow, identify critical infrastructure components, and analyze recovery strategies after network disruptions.
@@ -23,14 +23,14 @@ Urban Transportation Digital Twin is a simulation and analysis platform designed
 
 ```
 urban-transportation-digital-twin/
-│
-├── app.py
-├── main.py
-├── requirements.txt
-├── data/
-├── src/
-├── templates/
-└── static/
+â”‚
+â”œâ”€â”€ app.py
+â”œâ”€â”€ main.py
+â”œâ”€â”€ requirements.txt
+â”œâ”€â”€ data/
+â”œâ”€â”€ src/
+â”œâ”€â”€ templates/
+â””â”€â”€ static/
 ```
 
 ## Installation
@@ -61,3 +61,4 @@ python app.py
 
 ## Author
 Vidyasri Kammari
+
