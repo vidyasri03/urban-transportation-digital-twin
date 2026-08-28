@@ -191,28 +191,13 @@ http://127.0.0.1:5000/
 
 ### 🏠 Main Dashboard
 
-<p align="center">
-  <img src="./Project-Screenshots/Dashboard.png" width="100%" alt="Main Dashboard">
-</p>
-
 ### ⚠️ Failure Simulation
-
-<p align="center">
-  <img src="./Project-Screenshots/Failure_Simulation.png" width="100%" alt="Failure Simulation">
-</p>
 
 ### 🔄 Recovery Dashboard
 
-<p align="center">
-  <img src="./Project-Screenshots/Recovery_dashboard.png" width="100%" alt="Recovery Dashboard">
-</p>
-
 ### 📊 Recovery Strategy Comparison
-
-<p align="center">
-  <img src="./Project-Screenshots/Comparing_dashboard.png" width="100%" alt="Recovery Strategy Comparison">
-</p>
 ---
+
 ## 🚀 Applications
 
 This project can be used for studying:
